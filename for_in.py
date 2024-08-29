@@ -8,7 +8,12 @@ for letra in texto:
 print(novo_texto)
 '''
 
-numeros = range(10)
+""""
+For + Range
+range --> range (start, stop, step)
+"""
+
+numeros = range(0, 80, 2)
 
 for valor in numeros:
-    print(numeros)
+    print(valor)
