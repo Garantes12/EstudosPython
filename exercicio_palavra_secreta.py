@@ -16,7 +16,7 @@ usuário.
 """
 import os
 
-palavra_secreta = 'cachorro'
+palavra_secreta = 'chiclete'
 letras_acertadas = ''
 numero_tentativas = 0
 
@@ -26,7 +26,7 @@ while True:
 
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra.')
-        continue
+        
 
     if letra_digitada in palavra_secreta:
         letras_acertadas += letra_digitada
@@ -41,7 +41,7 @@ while True:
     print('Palavra formada:', palavra_formada)
 
     if palavra_formada == palavra_secreta:
-        os.system('clear')
+        os.system('cls')
         print('VOCÊ GANHOU!! PARABÉNS!')
         print('A palavra era', palavra_secreta)
         print('Tentativas:', numero_tentativas)
